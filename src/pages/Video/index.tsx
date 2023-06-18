@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import styles from "./Video.module.scss";
-import { VideoProps } from "../../interfaces/VideoProps";
+import { VideoData } from "../../interfaces/VideoProps";
 import VideoFooter from "../../components/VideoFooter";
 import VideoSidebar from "../../components/VideoSidebar";
 
@@ -12,7 +12,7 @@ function Video({
 	description,
 	music,
 	url,
-}: VideoProps) {
+}: VideoData) {
 	const videoRef = useRef<HTMLVideoElement>(null);
 	const [play, setPlay] = useState(false);
 

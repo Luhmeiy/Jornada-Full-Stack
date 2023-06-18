@@ -10,6 +10,6 @@ export interface VideoFooterProps {
 	music: string;
 }
 
-export interface VideoProps extends VideoSidebarProps, VideoFooterProps {
+export interface VideoData extends VideoSidebarProps, VideoFooterProps {
 	url: string;
 }
