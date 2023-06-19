@@ -26,7 +26,10 @@ function App() {
 	return (
 		<div className="app">
 			<div className="app__videos">
-				{videos && videos.map((video) => <Video {...video} />)}
+				{videos &&
+					videos.map((video, index) => (
+						<Video key={video.name + index} {...video} />
+					))}
 			</div>
 		</div>
 	);

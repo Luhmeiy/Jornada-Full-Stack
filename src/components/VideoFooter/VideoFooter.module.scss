@@ -20,6 +20,10 @@
 		overflow-x: hidden;
 		width: 80%;
 
+		@media only screen and (max-width: 440px) {
+			width: 78%;
+		}
+
 		& p {
 			animation: moveTheText 3s infinite linear;
 		}

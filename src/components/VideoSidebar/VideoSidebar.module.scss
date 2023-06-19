@@ -4,6 +4,10 @@
 	right: 10px;
 	top: 50%;
 
+	@media only screen and (max-width: 440px) {
+		top: 45%;
+	}
+
 	&__options {
 		padding: 20px;
 		text-align: center;
